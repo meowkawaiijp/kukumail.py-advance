@@ -10,3 +10,7 @@ print(c.recv_email(r))#List of emails sent
 ```
 # star
 Updates when the stars exceed 16
+## What to update.
+1. send a email
+2. get email list
+3. delete email address
