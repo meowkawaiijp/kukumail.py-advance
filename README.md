@@ -8,3 +8,5 @@ r=c.generate_random_email()#generate email
 print(r)
 print(c.recv_email(r))#List of emails sent
 ```
+# star
+Updates when the stars exceed 16
