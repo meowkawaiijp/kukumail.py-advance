@@ -5,7 +5,7 @@ import json
 import urllib
 
 class Client:
-    def __init__(self,proxy: http.Client=None):
+    def __init__(self,proxy:str=None):
         self.session=httpx.Client(proxy=proxy)
         self.session.headers = {
             "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
