@@ -9,7 +9,7 @@ class Client:
         self.session=session
         self.session.headers = {
             "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
-            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
         }
 
     def register(self):
@@ -42,7 +42,6 @@ class Client:
         return str(email.split(":")[1]).split(",")[0]
 
     def generate_email(self,domain="nyasan.com",address=""):
-        print(domain)
         email=self.session.post("https://m.kuku.lu/index.php?action=addMailAddrByManual&nopost=1&by_system=1&t="+str(int(time.time()))+"&csrf_token_check="+self. token+"&csrf_subtoken_check="+self.sub_token+"&newdomain="+domain+"&newuser="+address+"&recaptcha_token=&_="+str(int(+time.time()*1000)),cookies=self.cookies).text
         return str(email.split(":")[1])
 
