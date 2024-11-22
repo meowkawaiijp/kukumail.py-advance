@@ -14,3 +14,4 @@ Updates when the stars exceed 16
 1. send a email
 2. get email list
 3. delete email address
+4. async implementation
