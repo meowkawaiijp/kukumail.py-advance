@@ -12,6 +12,6 @@ print(c.recv_email(r))#List of emails sent
 Updates when the stars exceed 16
 ## What to update.
 1. send a email
-2. get email list
+2. get list of available email domain
 3. delete email address
 4. async implementation
