@@ -8,6 +8,8 @@ r=c.generate_random_email()#generate email
 print(r)
 print(c.recv_email(r))#List of emails sent
 ```
+# error
+can't login
 # star
 Updates when the stars exceed 16
 ## What to update.
