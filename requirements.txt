@@ -1,1 +1,3 @@
-httpx
+httpx>=0.24.0
+asyncio
+typing-extensions
